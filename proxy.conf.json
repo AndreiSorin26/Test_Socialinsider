@@ -1,0 +1,10 @@
+{
+  "/get-brands": {
+    "target": "http://localhost:5000",
+    "secure": false
+  },
+  "/get-profiles-data": {
+    "target": "http://localhost:5000",
+    "secure": false
+  }
+}

@@ -1,0 +1,20 @@
+<label>Select date:</label>
+<input *ngIf="brands.length != 0"
+       type="date"
+       id="selectedDate"
+       name="trip-start"
+       value="2018-10-10"
+       min="2000-01-01"
+       (change)="updateStatistics($event)">
+
+<table>
+  <tr>
+    <th>Brand name</th> <th>Total profiles</th> <th>Total fans</th> <th>Total engagement</th>
+  </tr>
+  <tr *ngFor="let stats of brandsStatistics">
+    <td>{{stats.name}}</td>
+    <td>{{stats.totalProfiles}}</td>
+    <td>{{stats.totalFans}}</td>
+    <td>{{stats.totalEngagement}}</td>
+  </tr>
+</table>
